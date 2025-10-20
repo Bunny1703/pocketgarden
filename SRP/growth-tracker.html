@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Tracker - Pocket Garden</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Pocket Garden</h1>
+                <p>Grow Anywhere, Anytime</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plant-guide.html">Plant Guide</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="growth-tracker.html" class="active">Growth Tracker</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tracker-header">
+        <div class="container">
+            <h2>Plant Growth Tracker</h2>
+            <p>Monitor your plants' progress and celebrate milestones</p>
+        </div>
+    </section>
+
+    <section class="tracker-content">
+        <div class="container">
+            <div class="tracker-controls">
+                <div class="plant-selector">
+                    <label for="plant-select">Select Plant:</label>
+                    <select id="plant-select">
+                        <option value="tomato">Cherry Tomatoes</option>
+                        <option value="basil">Basil</option>
+                        <option value="mint">Mint</option>
+                        <option value="pepper">Bell Peppers</option>
+                        <option value="lettuce">Leaf Lettuce</option>
+                        <option value="cilantro">Coriander/Cilantro</option>
+                    </select>
+                </div>
+                <div class="time-range">
+                    <label for="time-range">Time Range:</label>
+                    <select id="time-range">
+                        <option value="week">Past Week</option>
+                        <option value="month" selected>Past Month</option>
+                        <option value="3months">Past 3 Months</option>
+                        <option value="all">All Time</option>
+                    </select>
+                </div>
+                <div class="refresh-data">
+                    <button id="refresh-data" class="btn btn-small"><i class="fas fa-sync-alt"></i> Generate New Data</button>
+                </div>
+            </div>
+
+            <div class="graph-container">
+                <canvas id="growth-chart"></canvas>
+            </div>
+
+            <div class="growth-stats">
+                <div class="stat-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Current Height</h3>
+                    <p id="current-height">12 cm</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Growth Rate</h3>
+                    <p id="growth-rate">2.5 cm/week</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Days Growing</h3>
+                    <p id="days-growing">28 days</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Health Status</h3>
+                    <p id="health-status">Excellent</p>
+                </div>
+            </div>
+
+            <div class="milestones">
+                <h3>Growth Milestones</h3>
+                <div class="milestone-timeline" id="milestone-container">
+                    <!-- Milestones will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="growth-tips">
+                <h3>Growth Tips for <span id="plant-name">Cherry Tomatoes</span></h3>
+                <div class="tips-container" id="plant-tips">
+                    <!-- Tips will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="add-record">
+                <h3>Add New Growth Record</h3>
+                <form id="growth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="record-date">Date</label>
+                            <input type="date" id="record-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="record-height">Height (cm)</label>
+                            <input type="number" id="record-height" min="0" step="0.1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="record-notes">Notes</label>
+                            <input type="text" id="record-notes">
+                        </div>
+                        <div class="form-group">
+                            <label for="record-photo">Photo (optional)</label>
+                            <input type="file" id="record-photo" accept="image/*">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Record</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Need More Growing Supplies?</h2>
+            <p>Check out our shop for all your urban gardening needs.</p>
+            <a href="shop.html" class="btn btn-large">Visit Shop</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Pocket Garden</h3>
+                    <p>Grow Anywhere, Anytime</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="plant-guide.html">Plant Guide</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="growth-tracker.html">Growth Tracker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@pocketgarden.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for gardening tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pocket Garden. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

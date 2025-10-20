@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Pocket Garden</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Pocket Garden</h1>
+                <p>Grow Anywhere, Anytime</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plant-guide.html">Plant Guide</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="growth-tracker.html">Growth Tracker</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="shop-header">
+        <div class="container">
+            <h2>Shop Starter Kits & Supplies</h2>
+            <p>Everything you need to start your urban gardening journey</p>
+        </div>
+    </section>
+
+    <section class="shop-content">
+        <div class="container">
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="starter-kits">Starter Kits</button>
+                <button class="filter-btn" data-filter="containers">Containers</button>
+                <button class="filter-btn" data-filter="seeds">Seeds</button>
+                <button class="filter-btn" data-filter="tools">Tools & Accessories</button>
+            </div>
+
+            <div class="product-grid">
+                <!-- Starter Kits -->
+                <div class="product-card" data-id="sk1" data-category="starter-kits">
+                    <div class="product-image">
+                        <img src="images/basil.svg" alt="Herb Garden Starter Kit">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Herb Garden Starter Kit</h3>
+                        <div class="product-price">₹1,999</div>
+                        <p class="product-description">Everything you need to grow basil, mint, and cilantro in your kitchen. Includes 3 biodegradable pots, organic soil, seeds, and instructions.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="sk2" data-category="starter-kits">
+                    <div class="product-image">
+                        <img src="images/tomato.svg" alt="Vegetable Garden Starter Kit">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Vegetable Garden Starter Kit</h3>
+                        <div class="product-price">₹2,399</div>
+                        <p class="product-description">Grow cherry tomatoes, bell peppers, and lettuce on your balcony. Includes 3 fabric pots, premium soil mix, organic seeds, and plant supports.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="sk3" data-category="starter-kits">
+                    <div class="product-image">
+                        <img src="images/strawberry.svg" alt="Complete Urban Garden Kit">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Complete Urban Garden Kit</h3>
+                        <div class="product-price">₹3,999</div>
+                        <p class="product-description">Our most comprehensive kit with everything for a thriving pocket garden. Includes 6 containers, soil, fertilizer, 8 seed varieties, tools, and detailed guide.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Containers -->
+                <div class="product-card" data-id="c1" data-category="containers">
+                    <div class="product-image">
+                        <img src="images/succulent.svg" alt="Fabric Grow Bags">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Fabric Grow Bags (Set of 5)</h3>
+                        <div class="product-price">₹1,499</div>
+                        <p class="product-description">Breathable fabric pots that prevent root circling and promote healthy growth. Includes various sizes for different plants.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="c2" data-category="containers">
+                    <div class="product-image">
+                        <img src="images/mint.svg" alt="Window Box Planter">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Window Box Planter</h3>
+                        <div class="product-price">₹1,849</div>
+                        <p class="product-description">Self-watering window box perfect for herbs and small vegetables. Attaches securely to most windowsills.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="c3" data-category="containers">
+                    <div class="product-image">
+                        <img src="images/air-plant.svg" alt="Vertical Wall Planter">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Vertical Wall Planter</h3>
+                        <div class="product-price">₹2,799</div>
+                        <p class="product-description">Space-saving vertical planter with 12 pockets. Perfect for growing herbs and small plants on walls or fences.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seeds -->
+                <div class="product-card" data-id="s1" data-category="seeds">
+                    <div class="product-image">
+                        <img src="images/coriander.svg" alt="Culinary Herb Seed Collection">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Culinary Herb Seed Collection</h3>
+                        <div class="product-price">₹999</div>
+                        <p class="product-description">10 varieties of culinary herb seeds including basil, mint, cilantro, parsley, dill, and more. All organic and non-GMO.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="s2" data-category="seeds">
+                    <div class="product-image">
+                        <img src="images/bell-pepper.svg" alt="Container Vegetable Seed Collection">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Container Vegetable Seed Collection</h3>
+                        <div class="product-price">₹1,199</div>
+                        <p class="product-description">8 varieties of vegetables specially selected for container growing, including cherry tomatoes, compact peppers, and leaf lettuce.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="s3" data-category="seeds">
+                    <div class="product-image">
+                        <img src="images/lettuce.svg" alt="Microgreens Seed Kit">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Microgreens Seed Kit</h3>
+                        <div class="product-price">₹1,349</div>
+                        <p class="product-description">Grow nutritious microgreens indoors year-round. Includes 6 varieties of fast-growing seeds and detailed growing instructions.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Accessories -->
+                <div class="product-card" data-id="t1" data-category="tools">
+                    <div class="product-image">
+                        <img src="images/curry-leaves.svg" alt="Mini Garden Tool Set">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Mini Garden Tool Set</h3>
+                        <div class="product-price">₹1,599</div>
+                        <p class="product-description">Compact gardening tools perfect for container gardening. Includes trowel, fork, pruners, and plant labels in a storage pouch.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="t2" data-category="tools">
+                    <div class="product-image">
+                        <img src="images/blueberry.svg" alt="Plant Mister and Watering Can">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Plant Mister and Watering Can</h3>
+                        <div class="product-price">₹1,299</div>
+                        <p class="product-description">Elegant copper-finished mister and small watering can perfect for indoor plants. Provides gentle, controlled watering.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-id="t3" data-category="tools">
+                    <div class="product-image">
+                        <img src="images/lemon.svg" alt="Soil Testing Kit">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Soil Testing Kit</h3>
+                        <div class="product-price">₹1,799</div>
+                        <p class="product-description">Professional-grade soil testing kit to measure pH, moisture, and nutrient levels. Ensure your plants get exactly what they need.</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                            <a href="#" class="btn btn-secondary">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Need Help Choosing?</h2>
+            <p>Check out our plant guide for detailed information on what you can grow in your space.</p>
+            <a href="plant-guide.html" class="btn btn-large">View Plant Guide</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Pocket Garden</h3>
+                    <p>Grow Anywhere, Anytime</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="plant-guide.html">Plant Guide</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="growth-tracker.html">Growth Tracker</a></li>
+                        <li><a href="demo.html">Demo Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@pocketgarden.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for gardening tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pocket Garden. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Lettuce -->
+  <path d="M30,60 C30,40 70,40 70,60 C70,80 30,80 30,60 Z" fill="#8bc34a"/>
+  <path d="M35,60 C35,45 65,45 65,60 C65,75 35,75 35,60 Z" fill="#aed581"/>
+  <path d="M40,60 C40,50 60,50 60,60 C60,70 40,70 40,60 Z" fill="#dcedc8"/>
+</svg>
